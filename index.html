@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <!-- Ícone da página -->
+    <link rel="icon" type="image/png" href="./Imagens/GatinhaAstronauta.png">
+    <title>Lauvit</title>
+</head>   
+<body>
+    <!-- Div principal que contém o conteúdo da página -->
+    <div class="main">
+        <!-- Lado esquerdo da página -->
+        <div class="left">
+            <!-- Título e imagem do cabeçalho -->
+            <div class="TitleLeft">
+                <h1>Transcrição de falas</h1>
+                <select class="languageSelection" id="languageSelection">
+                    <option value="pt-BR" selected>Português</option>
+                    <option value="en-US">English</option>
+                </select>
+            </div>            
+            <!-- Botões de iniciar e parar -->
+            <button id="start-button"><img class="start-image" src="./Imagens/MeninaFalando.png"></button>
+            <button id="stop-button"><img class="stop-image" src="./Imagens/BalaoFala.png"></button>
+            <!-- Texto indicativo para tocar para falar -->
+            <p class="Falar">(Toque para falar)</p>
+            <!-- Texto indicativo de transcrição em andamento -->
+            <p class="Falando">Transcrevendo...</p>
+        </div>
+        <!-- Lado direito da página -->
+        <div class="right">
+            <!-- Cartão que exibe o texto transcrito -->
+            <div class="card">
+                <!-- Título do cartão -->
+                <h1>Texto transcrito</h1>
+                <!-- Área de texto onde o texto transcrito é exibido -->
+                <div class="textfield">
+                    <p id="final"></p>
+                </div>
+                <!-- Menu de ações relacionadas ao texto transcrito -->
+                <div class="menuFala">
+                    <!-- Botão para limpar o texto transcrito -->
+                    <button class="btn-limpar" id="clear-button"><img class="limpar" src="./Imagens/Borracha.png"></button>
+                    <!-- Botão para copiar o texto transcrito -->
+                    <button class="btn-copiar" id="copy-button"><img class="copiar" src="./Imagens/Copia.png"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Importação do arquivo JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>

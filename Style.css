@@ -1,0 +1,262 @@
+@import "https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@400;600&family=VT323&display=swap";
+
+body {
+    margin: 0;
+    font-family: 'Lobster', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TitleLeft {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+}
+
+.TitleLeft > h1 {
+    font-size: 3vw;
+    color: #77ffc0;
+}
+
+.TitleLeft > .languageSelection {
+    border: none;
+    width: 60%;
+    height: 4vh;
+    background: #2f2841;
+    font-size: 16px;
+    color: #77ffc0;
+    box-shadow: 0 9px 13px #00000056;
+}
+
+.left > p {
+    font-size: 2vw;
+    color: #77ffc0;
+    font-style: italic;
+}
+
+.left > button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#stop-button {
+    display: none;
+}
+
+.astronautIMG {
+    width: 3vw;
+}
+
+.Falando {
+    display: none;
+}
+
+.start-image {
+    transition: width 0.6s;
+    width: 25vw;
+}
+
+.start-image:hover {
+    transition: width 0.6s;
+    width: 28vw;
+}
+
+.stop-image {
+    transition: width 0.6s;
+    width: 20vw;
+}
+
+.stop-image:hover {
+    transition: width 0.6s;
+    width: 23vw;
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+}
+
+.card {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+}
+
+.card > h1 {
+    font-size: 3vw;
+    color: #0f8;
+    font-weight: 800;
+    margin: 0;
+    height: 100%;
+    text-shadow: 0 10px 40px -12px #00ff8052;
+}
+
+.textfield > p {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    color: #f5f5f5;
+    text-align: left;
+    padding: 4%;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.menuFala {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menuFala > .btn-copiar,
+.btn-limpar {
+    width: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.limpar {
+    transition: width 0.6s;
+    width: 4vw;
+}
+
+.limpar:hover {
+    transition: width 0.6s;
+    width: 5vw;
+}
+
+.copiar {
+    transition: width 0.6s;
+    width: 4vw;
+}
+
+.copiar:hover {
+    transition: width 0.6s;
+    width: 5vw;
+}
+
+@media only screen and (max-width: 950px) {
+    .card {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .start-image {
+        width: 30vw;
+    }
+
+    .start-image:hover {
+        width: 30vw;
+    }
+
+    .stop-image {
+        width: 30vw;
+    }
+
+    .stop-image:hover {
+        width: 30vw;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .card > h1 {
+        font-size: 8vw;
+        color: #0f8;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .limpar {
+        width: 12vw;
+    }
+
+    .limpar:hover {
+        width: 12vw;
+    }
+
+    .btn-copiar {
+        display: none;
+    }
+
+    .copiar {
+        display: none;
+    }
+
+    .copiar:hover {
+        display: none;
+    }
+
+    .left > p {
+        font-size: 4vw;
+        color: #77ffc0;
+        font-style: italic;
+    }
+
+    .textfield > p {
+        font-family: 'Arial', sans-serif;
+        font-size: 20px;
+        width: 100%;
+        color: #f5f5f5;
+        text-align: left;
+        padding: 2%;
+        max-height: 35vh;
+        overflow: auto;
+    }
+
+    .TitleLeft > h1 {
+        font-size: 8vw;
+        color: #77ffc0;
+    }
+}
